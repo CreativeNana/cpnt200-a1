@@ -1,30 +1,25 @@
+<?php include ('includes/config.php');
+  $page_title = "Subscribe";
+  $page_description = "Subscribe to the newsletter for more benefits.";
+  $current = "c_subscribe";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <title><%= title %></title>
-    
-    <!-- Link to the basic CSS files --> 
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/subscribe.css">
-
-    <!-- Link to the external CSS files: FontAwesome, Google fonts --> 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Parisienne&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<head>
+      <?php include ('includes/head.php');?>
+      <link rel="stylesheet" href="assets/css/subscribe.css">
   </head>
 
   <body class=<%= current %>>
     <div class="hero-image">
       <!-- Navigation -->
-      <%- include("../partials/nav"); %>
+      <?php include ('includes/nav.php');?>
 
       <div class="mwrapper">
-        <!-- Header -->
-        <%- include("../partials/header"); %>
+       <!-- Header -->
+       <?php include ('includes/header.php');?>
 
         <div class="form_wrap">
           <form action="" method="post">
@@ -61,7 +56,7 @@
       </div>
 
       <!--- footer ------------------------------------------------------------>
-      <%- include("../partials/footer"); %>
+      <?php include ('includes/footer.php');?>
       
     </div>
   </body>

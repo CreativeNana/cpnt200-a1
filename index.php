@@ -1,48 +1,43 @@
+<?php include ('includes/config.php');
+  $page_title = "Home";
+  $page_description = "Delicious, Delightful and Differentiated";
+  $current = "c_index";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <title><%= title %></title>
-    
-    <!-- Link to the basic CSS files --> 
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- Link to the external CSS files: FontAwesome, Google fonts --> 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Parisienne&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <?php include ('includes/head.php');?>
+    <link rel="stylesheet" href="assets/css/main.css">
   </head>
   
-  <body class=<%= current %>>
+  <body class=<?php echo $current; ?>>
     <div class="hero-image">
       <!-- Navigation -->
-      <%- include("../partials/nav"); %>
+      <?php include ('includes/nav.php');?>
 
       <div class="mwrapper">
       <!-- Header -->
-      <%- include("../partials/header"); %>
+      <?php include ('includes/header.php');?>
 
       <section>
         <h3>The delicacies of the day</h3>
         <div class="flex_wrap">
           <figure class="flex_wrap_item" >
-            <img src="images/488-original.jpg" alt="food menu1">
+            <img src="assets/images/488-original.jpg" alt="food menu1">
             <figcaption>Stir-fried Pork with Onion </figcaption>
           </figure>
           <figure class="flex_wrap_item" >
-            <img src="images/pexels-jer-chung-original.jpg" alt="food menu2">
+            <img src="assets/images/pexels-jer-chung-original.jpg" alt="food menu2">
             <figcaption>Stir-fried Pork with Onion </figcaption>
           </figure>
           <figure class="flex_wrap_item" >
-            <img src="images/pexels-jer-chung2-original.jpg" alt="food menu3">
+            <img src="assets/images/pexels-jer-chung2-original.jpg" alt="food menu3">
             <figcaption>Stir-fried Pork with Onion </figcaption>
           </figure>
           <figure class="flex_wrap_item" >
-            <img src="images/pexels-lumn-1410236.jpg" alt="food menu4">
+            <img src="assets/images/pexels-lumn-1410236.jpg" alt="food menu4">
             <figcaption>Stir-fried Pork with Onion </figcaption>
           </figure>
         </div>
@@ -52,7 +47,7 @@
         <div class="flex_wrap2">
           <div class="flex_wrap_item2">
             <figure>
-              <img src="images/pexels-miquel-ferran-gomez-figueroa-3814446.jpg" alt="The chef of this year">
+              <img src="assets/images/pexels-miquel-ferran-gomez-figueroa-3814446.jpg" alt="The chef of this year">
               <figcaption>The chef of this year </figcaption>
             </figure>
             <figure class="flex_wrap2_quote">
@@ -73,7 +68,7 @@
     </div>
 
       <!--- footer ------------------------------------------------------------>
-      <%- include("../partials/footer"); %>
+      <?php include ('includes/footer.php');?>
       
     </div>
   </body>

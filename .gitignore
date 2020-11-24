@@ -1,9 +1,0 @@
-# npm dependency directory
-node_modules
-
-# dotenv environment variables file
-.env
-.env.test
-
-# Others
-.DS_Store
