@@ -6,21 +6,19 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <?php include ('includes/head.php');?>
-    <link rel="stylesheet" href="assets/css/contact.css">
-</head>
-
-<body class=<%= current %>>
+  <head>
+      <?php include ('includes/head.php');?>
+      <link rel="stylesheet" href="assets/css/contact.css">
+  </head>
+  
+  <body class=<?php echo $current; ?>>
     <div class="hero-image">
-      <!-- Navigation -->
       <?php include ('includes/nav.php');?>
 
       <div class="mwrapper">
-        <!-- Header -->
-        <?php include ('includes/header.php');?>
-        
+       <!-- Header -->
+       <?php include ('includes/header.php');?>
+               
         <section>
           <div class="flex_wrap">
             <figure class="flex_wrap_item" >
@@ -62,42 +60,45 @@
           </div>
         </section>
 
-        <section class="con_background_image">    
+
+        <div class="form_wrap">
           <form action="" method="post">
             <fieldset>
-              <legend>Please send us your opinion</legend>
+              <legend>Please send us your opinion</legend> 
+
               <div class="form-group">
-                <label for="fname">Name<h>*</h>:</label>
-                <input type="text" id="fname" class="input-control" name="firstname" placeholder="Please enter your name" required>
-              </div>
-        
-              <div class="form-group">
-                <label for="email">E-mail<h>*</h>:</label>
-                 <input type="text" id="email"  class="input-control" name="email" placeholder="Please enter your E-mail address" required>
+                <label for="name">Name <h>*</h>:</label>
+                <input type="text" id="name"  class="input-control" name="email" placeholder="Please input your name" required>
               </div>
 
               <div class="form-group">
-                <label for="subject_input">Subject<h>*</h>:</label>
-                <input type="text" id="subject_input" class="form-control" placeholder="Please enter your subject" required>
+                <label for="email">E-mail <h>*</h>:</label>
+                <input type="text" id="email"  class="input-control" name="email" placeholder="Please enter your E-mail address" required>
               </div>
+      
+              <div class="form-group">
+                <label for="password">Password <h>*</h>:</label>
+                <input type="text" id="password"  class="input-control" name="password" placeholder="Please enter your password" required>
+              </div> 
 
               <div class="form-group">
-                <label for="message_textarea">Message<h>*</h>:</label>
-                <textarea name="" id="" cols="30" rows="5" id="message_textarea" class="form-control" placeholder="Message" required></textarea>
+                <label for="textarea">Message<h>*</h>:</label>
+                <textarea name="" id="textarea" cols="40" rows="5" class="form-control" placeholder="Message" required></textarea>
               </div>
 
               <div>
-                <button type="button" class="c_button">Send Message</button>
+                <button type="button" id="contact" class="c_button">Send Message</button>
               </div>
-           </fieldset>
+            </fieldset>
           </form>
-        </section>
+        </div>
+
       </div>
 
       <!--- footer ------------------------------------------------------------>
       <?php include ('includes/footer.php');?>
-      
-  </div>
+    </div>
+    <script type="text/JavaScript" src="assets/js/menu.js"></script>  
 
 </body>
 </html>

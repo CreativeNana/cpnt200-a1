@@ -7,12 +7,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
       <?php include ('includes/head.php');?>
       <link rel="stylesheet" href="assets/css/subscribe.css">
   </head>
 
-  <body class=<%= current %>>
+  <body class=<?php echo $current; ?>>
     <div class="hero-image">
       <!-- Navigation -->
       <?php include ('includes/nav.php');?>
@@ -57,7 +57,7 @@
 
       <!--- footer ------------------------------------------------------------>
       <?php include ('includes/footer.php');?>
-      
     </div>
+    <script type="text/JavaScript" src="assets/js/menu.js"></script>  
   </body>
 </html>

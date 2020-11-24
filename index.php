@@ -69,7 +69,7 @@
 
       <!--- footer ------------------------------------------------------------>
       <?php include ('includes/footer.php');?>
-      
     </div>
+    <script type="text/JavaScript" src="assets/js/menu.js"></script>  
   </body>
 </html>

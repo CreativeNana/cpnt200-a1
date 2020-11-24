@@ -26,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #fff; 
+  background-color: black; 
 }
 /*** End reset margin, padding, align, and font defaults ****/
 /************************************************************/
@@ -200,10 +200,10 @@ body {
 /***************************************************************/
 /*** Start Footer area *****************************************/
 .footer {
-  margin-top: auto;
-  padding: .3em;
-  background: lightslategray;
-  color: black;
+  height: 4em;
+  padding: 1.5em;
+  background-color: black;
+  color: lightslategray;
   font-size: 1.2rem;
   text-align: center;
 }

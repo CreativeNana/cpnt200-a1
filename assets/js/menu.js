@@ -1,4 +1,4 @@
-<!-- Show current page as active in navigation menu -->
+// Show current page as active in navigation menu
 
   let cUrl = window.location.href.toLowerCase().split("?");
   let cPage = cUrl[0];
